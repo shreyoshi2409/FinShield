@@ -290,6 +290,7 @@ Detect → Decide → Act → Log → Repeat
 
 * Spring Boot
 * MySQL
+* Postman
 
 ### AI Services
 
@@ -301,7 +302,7 @@ Detect → Decide → Act → Log → Repeat
 ### AI/ML
 
 * Rule-based detection
-* LLM (Claude API)
+* LLM (Grok API)
 
 ---
 ## 📊 Comparison Table
