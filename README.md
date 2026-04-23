@@ -1,360 +1,218 @@
-# 🚀 FinShield — Smart Financial Assistant
+<div align="center">
 
-**Problem Statement Number:** 3
-**Theme:** AI for Enterprise Cost Intelligence & Autonomous Action
-**Hackathon:** ET AI Hackathon 2026
-**Powered by:** Avataar.ai | Unstop
-
----
-
-## 📌 Overview
-
-**FinShield** is an AI-powered Smart Financial Assistant designed to go beyond dashboards.
-It continuously monitors enterprise financial data, detects cost leakages, and initiates corrective actions with measurable financial impact — all with human approval and full transparency.
-
----
-
-## ❗ Problem Statement
-
-Enterprises generate massive volumes of financial and operational data across vendors, procurement, and internal systems. However:
-
-* Cost leakages often go unnoticed
-* Inefficiencies are detected too late
-* Manual auditing is slow and reactive
-* Financial decisions lack real-time intelligence
-
----
-
-## 🎯 Goal
-
-To build an AI-driven system that:
-
-* Continuously monitors enterprise data
-* Detects anomalies and inefficiencies
-* Initiates corrective actions
-* Quantifies financial impact in real time
-
----
-
-## 💡 Proposed Solution
-
-We propose the **Smart Financial Assistant (SFA)** — an AI-driven system that:
-
-* Automatically detects where a company is losing money
-* Takes action to fix it with human approval and full transparency
-* Quantifies financial impact and recommends optimal corrective actions in real time
-
----
-
-## ⚙️ System Overview
-
-FinShield acts as a **24/7 financial watchdog** for enterprises.
-
-### 🔹 Step 1: Data Ingestion
-
-* Upload transaction data (CSV/Excel)
-* Includes:
-
-  * Vendor payments
-  * Transaction details
-  * SLA deadlines
-
-### 🔹 Step 2: Problem Detection (AI Monitoring)
-
-Detects anomalies like:
-
-* Duplicate Payments
-* Cost Spikes
-* Vendor Overcharges
-* SLA Breach Risks
-
-> Works like an intelligent auditor
-
----
-
-### 🔹 Step 3: AI Decision Making
-
-AI evaluates:
-
-* Severity of issue
-* Business impact
-* Recommended action
-
-**Example:**
-Duplicate payment → Request refund immediately
-
----
-
-### 🔹 Step 4: Financial Impact Analysis
-
-System calculates:
-
-* Money at risk
-* Recoverable amount
-
-**Example:**
-₹50,000 can be saved
-
----
-
-### 🔹 Step 5: Human Approval Layer
-
-Manager reviews:
-
-* Detected issue
-* AI recommendation
-* Financial impact
-
-Options:
-
-* Approve
-* Reject
-
----
-
-### 🔹 Step 6: Automated Action
-
-Once approved:
-
-* Email vendor
-* Flag transaction
-* Trigger workflows
-
----
-
-### 🔹 Step 7: Audit & Transparency
-
-System logs:
-
-* Anomalies detected
-* AI decisions
-* Actions taken
-
----
-
-### 🔹 Step 8: Continuous Monitoring
-
-* Runs in real-time
-* Prevents future losses
-
----
-
-## 🏗️ System Architecture
-
-### 🔹 Layer 1: Frontend (React)
-
-* Dashboard visualization
-* Approval UI
-* Audit logs
-
----
-
-### 🔹 Layer 2: Orchestration Layer (Spring Boot)
-
-Core backend system:
-
-* API Gateway
-* Workflow control
-* Approval management
-* Action execution
-* Data storage
-
-Modules:
-
-* Ingestion Controller
-* Agent Orchestrator
-* Approval Manager
-* Action Executor
-* Audit Logger
-
----
-
-### 🔹 Layer 3: Intelligence Layer (Python + ML)
-
-* Anomaly Detection
-* SLA Prediction
-* Variance Analysis
-
----
-
-### 🔹 Layer 4: Agentic Layer
-
-Agents include:
-
-1. **Monitoring Agent** → detects anomalies
-2. **Spend Intelligence Agent** → assigns severity
-3. **Decision Agent (LLM)** → recommends actions
-4. **Impact Math Agent** → calculates savings
-5. **Action Agent** → executes workflows
-6. **Audit Agent** → logs everything
-
----
-
-## 🔄 Data Flow
+<br/>
 
 ```
-User Uploads Data
-        ↓
-Spring Boot (MySQL)
-        ↓
-AI Pipeline Triggered
-        ↓
-Python ML detects anomalies
-        ↓
-Agents decide action
-        ↓
-Impact calculated
-        ↓
-Approval sent to UI
-        ↓
-User approves
-        ↓
-Action executed
-        ↓
-Audit logs stored
-        ↓
-Dashboard updated
+███████╗██╗███╗   ██╗███████╗██╗  ██╗██╗███████╗██╗     ██████╗ 
+██╔════╝██║████╗  ██║██╔════╝██║  ██║██║██╔════╝██║     ██╔══██╗
+█████╗  ██║██╔██╗ ██║███████╗███████║██║█████╗  ██║     ██║  ██║
+██╔══╝  ██║██║╚██╗██║╚════██║██╔══██║██║██╔══╝  ██║     ██║  ██║
+██║     ██║██║ ╚████║███████║██║  ██║██║███████╗███████╗██████╔╝
+╚═╝     ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝╚══════╝╚══════╝╚═════╝ 
+```
+
+**AI-Powered Enterprise Financial Intelligence — Detect. Decide. Act.**
+
+[![Hackathon](https://img.shields.io/badge/ET_AI_Hackathon_2026-Submission-orange?style=flat-square)](https://unstop.com)
+[![Powered By](https://img.shields.io/badge/Powered_by-Avataar.ai-blueviolet?style=flat-square)](https://avataar.ai)
+[![Problem](https://img.shields.io/badge/Problem_Statement-3-red?style=flat-square)](#)
+[![Theme](https://img.shields.io/badge/Theme-AI_for_Enterprise_Cost_Intelligence-blue?style=flat-square)](#)
+[![Stack](https://img.shields.io/badge/Stack-React_·_Spring_Boot_·_FastAPI_·_Python-green?style=flat-square)](#)
+[![LLM](https://img.shields.io/badge/LLM-Grok_API-black?style=flat-square)](#)
+
+<br/>
+
+> *Traditional dashboards show you problems. Manual auditing reacts to problems.*  
+> **FinShield detects, decides, and acts on problems — before they become losses.**
+
+<br/>
+
+</div>
+
+---
+
+## The Problem
+
+Enterprises generate millions of financial transactions daily — across vendors, procurement pipelines, and internal systems. Yet:
+
+- **Cost leakages go undetected** for weeks or months
+- **Duplicate payments and overcharges** slip through manual audits
+- **SLA breaches compound** into penalties before anyone notices
+- **Financial decisions** are made on stale, delayed data
+
+The result? Even a **2–5% inefficiency** in enterprise operations translates to **millions in preventable annual losses**.
+
+---
+
+## What FinShield Does
+
+FinShield is a **24/7 autonomous financial watchdog** — an AI system that continuously monitors enterprise transaction data, surfaces cost leakages the moment they appear, and triggers corrective actions with full human oversight.
+
+```
+Upload Data → AI Detects Anomaly → Agents Decide Action → Manager Approves → System Executes → Audit Logged
+```
+
+It doesn't just flag problems. It tells you **exactly how much money is at risk**, **what to do about it**, and **executes the fix** the moment you approve.
+
+---
+
+## How It Works
+
+### Step 1 — Data Ingestion
+Upload transaction data (CSV / Excel) containing vendor payments, invoice details, and SLA deadlines. FinShield ingests and stores it via the Spring Boot backend into MySQL.
+
+### Step 2 — AI Anomaly Detection
+The Python ML layer scans every transaction against three detection engines:
+
+| Engine | Trigger | Severity |
+|---|---|---|
+| Duplicate Payment Detector | Same vendor + same amount | 🔴 CRITICAL |
+| Cost Spike Detector | >30% increase over baseline | 🟠 HIGH |
+| SLA Breach Risk Detector | Deadline within threshold | 🟠 HIGH |
+
+### Step 3 — Agentic Decision Pipeline
+Six specialized agents form an autonomous reasoning loop:
+
+```
+Monitoring Agent       →  flags anomalies
+Spend Intelligence Agent →  assigns severity + business context  
+Decision Agent (LLM)   →  recommends corrective action via Grok API
+Impact Math Agent      →  calculates ₹ recoverable amount
+Action Agent           →  queues approved workflows for execution
+Audit Agent            →  logs every step immutably
+```
+
+### Step 4 — Human-in-the-Loop Approval
+The manager sees a clean UI card with:
+- What was detected
+- Why the AI flagged it
+- How much money is at risk
+- The recommended action
+
+One click: **Approve** or **Reject**. Nothing executes without consent.
+
+### Step 5 — Automated Execution
+On approval: vendor emails sent, transactions flagged, workflows triggered. Every action is logged with full reasoning for compliance and audit.
+
+---
+
+## Architecture
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                     FRONTEND (React)                    │
+│         Dashboard  ·  Approval UI  ·  Audit Logs        │
+└────────────────────────┬────────────────────────────────┘
+                         │ REST API
+┌────────────────────────▼────────────────────────────────┐
+│              ORCHESTRATION LAYER (Spring Boot)          │
+│  API Gateway · Workflow Engine · Approval Manager       │
+│  Action Executor · Audit Logger · MySQL Storage         │
+└──────────┬─────────────────────────────┬────────────────┘
+           │ ML Trigger                  │ Agent Calls
+┌──────────▼──────────┐      ┌───────────▼───────────────┐
+│  INTELLIGENCE LAYER │      │      AGENTIC LAYER        │
+│  Python · FastAPI   │      │  6 Autonomous Agents      │
+│  Anomaly Detection  │      │  LLM via Grok API         │
+│  SLA Prediction     │      │  Agentic Loop (Detect →   │
+│  Variance Analysis  │      │  Decide → Act → Log)      │
+└─────────────────────┘      └───────────────────────────┘
 ```
 
 ---
 
-## 🗄️ Database Design
+## Tech Stack
 
-Core Tables:
-
-* transactions
-* vendors
-* sla_records
-* anomalies
-* agent_decisions
-* actions
-* audit_logs
-
----
-
-## 🔌 API Design
-
-| Method | Endpoint        |
-| ------ | --------------- |
-| POST   | /upload-data    |
-| GET    | /transactions   |
-| POST   | /run-agents     |
-| GET    | /anomalies      |
-| POST   | /approve-action |
-| POST   | /execute-action |
-| GET    | /audit-logs     |
-| GET    | /impact-summary |
+| Layer | Technology |
+|---|---|
+| **Frontend** | React.js |
+| **Backend / Orchestration** | Spring Boot, MySQL |
+| **AI Services** | FastAPI, Python, Pandas |
+| **ML / Detection** | Rule-based engines, statistical variance |
+| **LLM** | Grok API |
+| **Testing** | Postman |
 
 ---
 
-## 🧠 Detection Engines
+## API Reference
 
-* **Duplicate Payment Detector**
-  Same vendor + same amount → CRITICAL
-
-* **Cost Spike Detector**
-
-  > 30% increase → HIGH
-
-* **SLA Breach Risk Detector**
-  Deadline near → HIGH
-
----
-
-## 🔑 Key Design Principles
-
-### 🔁 Agentic Loop
-
-Detect → Decide → Act → Log → Repeat
-
-### 👤 Human-in-the-Loop
-
-* Approval before execution
-* Enterprise-safe
-
-### 🔍 Transparency & Auditability
-
-* Every step logged
-* Fully explainable AI
-
-### 💰 Quantifiable Impact
-
-* Cost saved
-* Penalties avoided
+| Method | Endpoint | Description |
+|---|---|---|
+| `POST` | `/upload-data` | Ingest CSV/Excel transaction file |
+| `GET` | `/transactions` | List all ingested transactions |
+| `POST` | `/run-agents` | Trigger the full agentic pipeline |
+| `GET` | `/anomalies` | Fetch detected anomalies |
+| `POST` | `/approve-action` | Submit human approval decision |
+| `POST` | `/execute-action` | Execute approved corrective action |
+| `GET` | `/audit-logs` | Retrieve full audit trail |
+| `GET` | `/impact-summary` | Get ₹ financial impact summary |
 
 ---
 
-## 🛠️ Tech Stack
+## Database Schema
 
-### Backend
-
-* Spring Boot
-* MySQL
-* Postman
-
-### AI Services
-
-* FastAPI
-* Python
-* Pandas
-* Requests
-
-### AI/ML
-
-* Rule-based detection
-* LLM (Grok API)
-
----
-## 📊 Comparison Table
-
-| Feature / Capability         | Traditional Dashboards | Manual Auditing | FinShield (Our Solution)    |
-| ---------------------------- | ---------------------- | --------------- | --------------------------- |
-| Real-time Monitoring         | ❌ No                   | ❌ No            | ✅ Yes                       |
-| Anomaly Detection            | ⚠️ Limited             | ⚠️ Manual       | ✅ Automated (AI-driven)     |
-| Cost Leakage Detection       | ❌ Not proactive        | ⚠️ Delayed      | ✅ Real-time detection       |
-| Financial Impact Calculation | ❌ No                   | ❌ No            | ✅ Yes (₹ impact shown)      |
-| Decision Making              | ❌ Not supported        | ❌ Manual only   | ✅ AI-assisted               |
-| Action Execution             | ❌ No                   | ❌ No            | ✅ Automated (with approval) |
-| Human-in-the-Loop            | ❌ No                   | ✅ Yes           | ✅ Yes                       |
-| Transparency & Audit Logs    | ⚠️ Limited             | ⚠️ Manual logs  | ✅ Fully logged system       |
-| Scalability                  | ⚠️ Moderate            | ❌ Low           | ✅ High                      |
-| Speed                        | ❌ Slow                 | ❌ Very slow     | ✅ Real-time                 |
-| Proactive Prevention         | ❌ No                   | ❌ No            | ✅ Yes                       |
+```
+transactions      — raw ingested financial records
+vendors           — vendor master data
+sla_records       — SLA deadlines and terms
+anomalies         — detected issues with severity
+agent_decisions   — AI reasoning and recommendations
+actions           — approved and executed workflows
+audit_logs        — immutable system-wide event log
+```
 
 ---
 
-💡 **Key Insight:**
-Traditional systems only *show* problems, manual systems *react* to problems, but **FinShield actively detects, decides, and acts on problems in real time.**
+## FinShield vs. The Alternatives
 
-## 📊 Impact
-
-Even a **2–5% inefficiency** in enterprise operations can lead to **millions in losses annually**.
-
-FinShield:
-
-* Identifies hidden leakages
-* Quantifies financial loss
-* Recovers revenue through intelligent automation
-
----
-
-## ✅ Conclusion
-
-FinShield goes beyond traditional analytics by:
-
-* Delivering **quantifiable financial impact**
-* Taking **intelligent, actionable decisions**
-* Ensuring **human approval for control and trust**
-* Providing **full transparency through audit logs**
-
-It is not just a monitoring tool —
-it is a **decision-making system for financial optimization**.
+| Capability | Traditional Dashboards | Manual Auditing | **FinShield** |
+|---|:---:|:---:|:---:|
+| Real-time monitoring | ❌ | ❌ | ✅ |
+| Automated anomaly detection | ⚠️ Limited | ⚠️ Manual | ✅ AI-driven |
+| Proactive cost leakage detection | ❌ | ⚠️ Delayed | ✅ Real-time |
+| Financial impact quantification (₹) | ❌ | ❌ | ✅ |
+| AI-assisted decision making | ❌ | ❌ | ✅ |
+| Automated action execution | ❌ | ❌ | ✅ With approval |
+| Human-in-the-loop control | ❌ | ✅ | ✅ |
+| Full audit trail | ⚠️ Limited | ⚠️ Manual logs | ✅ Immutable |
+| Scalability | ⚠️ Moderate | ❌ Low | ✅ High |
+| Speed | ❌ Slow | ❌ Very slow | ✅ Real-time |
 
 ---
 
-## 🚀 Future Scope
+## Design Principles
 
-* Real-time streaming data integration
-* ERP integration (SAP, Oracle)
-* Advanced ML anomaly detection
-* Autonomous financial agents
+**Agentic Loop** — Every cycle: Detect → Decide → Act → Log → Repeat. No human bottleneck in the detection phase.
+
+**Human-in-the-Loop** — No financial action executes without explicit manager approval. Enterprise-safe by design.
+
+**Full Transparency** — Every AI recommendation includes its reasoning. Every action is logged. Nothing is a black box.
+
+**Quantifiable Impact** — The system doesn't just flag issues; it tells you exactly how much money is recoverable in rupees.
+
+---
+
+## Roadmap
+
+- [ ] Real-time streaming data integration (Kafka / Flink)
+- [ ] ERP integration — SAP, Oracle, Tally
+- [ ] Advanced ML models for anomaly detection (Isolation Forest, Autoencoders)
+- [ ] Autonomous financial agents with multi-step reasoning
+- [ ] Multi-currency and cross-border transaction support
+- [ ] Role-based access control and SSO
+
+---
+
+## Team
+
+Built for **ET AI Hackathon 2026** · Problem Statement #3  
+Theme: *AI for Enterprise Cost Intelligence & Autonomous Action*  
+Powered by **Avataar.ai** × **Unstop**
+
+---
+
+<div align="center">
+
+*FinShield is not just a monitoring tool — it is a decision-making system for financial optimization.*
+
+</div>
